@@ -1,0 +1,78 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  background-color: rgb(39, 39, 39);
+}
+
+/* Centering the calculator and making it responsive */
+body, html {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.calculator {
+  width: 90%; /* Make it responsive to screen width */
+  max-width: 320px; /* Ensures it doesn't exceed 320px */
+  margin: 0 auto; /* Center it horizontally */
+  border: 1px solid white;
+  padding: 10px;
+  background-color: orangered;
+}
+
+.output {
+  background: black;
+  color: white;
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-right: 10px;
+  text-align: end;
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.keys {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Create a grid for the buttons */
+  gap: 5px; /* Space between buttons */
+  background-color: orangered;
+}
+
+.key {
+  background: rgb(28, 65, 28);
+  padding: 20px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  border-radius: 5px; /* Add a slight border radius */
+}
+
+.key:hover {
+  background-color: bisque;
+  color: black;
+}
+
+.enter {
+  grid-column: 4 / 5;
+  grid-row: 2 / span 4;
+  background: rgb(0, 53, 73);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0; /* Ensure padding is not added on top of grid placement */
+}
+.ac{
+  background-color: rgb(255, 0, 0);
+  padding: 20px;
+  font-size: 25px;
+  color: white;
+  text-align: center;
+  border-radius: 5px;
+}
+.ac:hover{
+  background-color: bisque;
+  color: black;
+}
